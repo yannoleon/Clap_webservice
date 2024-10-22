@@ -27,6 +27,6 @@ def text_cosine(text_entry:Text_entry):
 
     texts_str = ''.join([t + '\n' for t in text_entry.text])
 
-    res = f"<h1> Cosine similatiries between: \n {texts_str} is: \n {s} </h1>"
+    res = f"<h1> Cosine similarities between:\n {texts_str} is:\n {s} </h1>"
 
     return Response(res)
