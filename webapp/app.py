@@ -15,6 +15,10 @@ app = FastAPI()
 class Text_entry(BaseModel):
     text: list[str]
 
+@app.get('/')
+def root():
+    return Response("<h1> Texts to cosines app </h1>")
+
 @app.post('/text_cosine', response_model=Text_entry)
 def text_cosine(text_entry:Text_entry):
 
