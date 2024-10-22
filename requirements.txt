@@ -1,1 +1,6 @@
-laion-clap
+torch
+torchvision
+transformers
+datasets
+sklearn
+# laion-clap
