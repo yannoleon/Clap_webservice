@@ -2,5 +2,7 @@ torch
 torchvision
 transformers
 datasets
-sklearn
+scikit-learn
+fastapi[standard]
+uvicorn
 # laion-clap
