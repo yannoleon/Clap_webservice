@@ -1,8 +1,9 @@
-torch
-torchvision
-transformers
-datasets
-scikit-learn
+torch==2.5.0
+torchvision==0.20.0
+transformers==4.45.2
+datasets==3.0.1
+scikit-learn==1.5.2
+# fastapi==0.115.2
 fastapi[standard]
-uvicorn
+uvicorn==0.32.0
 # laion-clap
