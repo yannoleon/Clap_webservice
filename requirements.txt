@@ -6,4 +6,6 @@ scikit-learn==1.5.2
 # fastapi==0.115.2
 fastapi[standard]
 uvicorn==0.32.0
+gunicorn==22.0.0
+Werkzeug==3.0.3
 # laion-clap

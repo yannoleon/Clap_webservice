@@ -22,7 +22,7 @@ def root():
     return Response("<h1> Texts to cosines app </h1>")
 
 @app.post('/text_cosine', response_model=Text_entry)
-def text_cosine(text_entry:Text_entry):
+async def text_cosine(text_entry:Text_entry):
 
     inputs = tokenizer(text_entry.text, padding=True, return_tensors="pt")
 
