@@ -1,5 +1,4 @@
 import requests
-from requests.auth import HTTPBasicAuth
 import json
 
 # Local API endpoint
@@ -7,14 +6,17 @@ import json
 
 # Remote API endpoint (don't forget to make it public or to specify authentication auth=(id, pw) in the post method)
 url = "https://supreme-space-tribble-q679vqw4qgj29vp9-8080.app.github.dev/text_cosine"
+# url = "https://8080-cs-e73794f1-3bde-4568-9e29-1591d8c898bb.cs-europe-west1-haha.cloudshell.dev/"
 
-# Send a GET request to the API
+# Send a request to the API
 query = json.dumps({
   "text": [
     "I love Mozart", "I love jazz", "I love rap"
   ]
 })
 response = requests.post(url, query)
+
+# response = requests.get(url)
 
 # Check if the request was successful
 if response.status_code == 200:
